@@ -1,0 +1,274 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Bungee', cursive;
+    
+}
+/* page attente */
+.allA{
+    width:100%;
+    height: 100vh;
+    background-color:black;
+}
+#title{
+    position: absolute;
+    color:white;
+    font-size: 110px;
+    left:35%;
+    opacity:1;
+    text-shadow: 5px 5px 50px rgb(252, 252, 252);
+    z-index:10;
+    animation: neon 0.5s infinite linear; 
+}
+@keyframes neon{
+    0%{
+        opacity:1;
+    }
+    100%{
+        opacity:0.2;
+    }
+}
+.link{
+    position:relative;
+    text-align: center;
+    width:10%;
+    height: 50px;
+    left:45%;
+    top:5%;
+    opacity:0.2;
+    
+}
+.link:hover{
+    opacity:1;
+}
+#mid img{
+    margin-top:15%;
+    margin-left:50%;
+    transform: translateX(-50%) translateY(-15%);
+}
+#portfolio{
+   
+    color:white;
+    text-decoration: none;
+    text-align: center;
+}
+#trait{
+    position:absolute;
+    width:2px;
+    height:20px;
+    left:50%;
+    background-color:white;
+    animation: updown 1s infinite linear; 
+    
+}
+@keyframes updown{
+    0%{
+        height:20px;
+    }
+    100%{
+        height:40px;
+    }
+}
+/* page principal */
+.all{
+    
+    width:100%;
+    perspective: 1000px;
+}
+#fond{
+    position: relative;
+    width:100%;
+    height:100vh;
+    
+    
+}
+.all img{
+    position: absolute;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255,0.5);
+    transition: all 0.5s ease-in-out;
+}
+
+#a{
+    left:20%;
+    top:8%;
+}
+#b{
+    left:32%;
+    top:2%;
+}
+#c{
+    left:49%;
+    top:7%;
+}
+#d{
+    left:64%;
+    top:6%;
+}
+#e{
+    left:75%;
+    top:5%;
+}
+#f{
+    left:85%;
+    top:8%;
+}
+#g{
+    left:10%;
+    top:30%;
+}
+#h{
+    left:25%;
+    top:30%;
+}
+#i{
+    left:40%;
+    top:35%;
+}
+#j{
+    left:54%;
+    top:30%;
+}
+#k{
+    left:72%;
+    top:35%;
+}
+#l{
+    left:80%;
+    top:30%;
+}
+#m{
+    left:6%;
+    top:55%;
+}
+#n{
+    left:20%;
+    top:50%;
+}
+#o{
+    left:40%;
+    top:57%;
+}
+#p{
+    left:58%;
+    top:52%;
+}
+#q{
+    left:64%;
+    top:56%;
+}
+#r{
+    left:80%;
+    top:58%;
+}
+#s{
+    left:2%;
+    top:70%;
+}
+#t{
+    left:10%;
+    top:74%;
+}
+#u{
+    left:30%;
+    top:70%;
+}
+#v{
+    left:45%;
+    top:75%;
+}
+#w{
+    left:58%;
+    top:75%;
+}
+#x{
+    left:64%;
+    top:75%;
+}
+#y{
+    left:80%;
+    top:70%;
+}
+#boutton{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    width:90%;
+    height:10vh;
+    top:0;
+    left:5%;
+    opacity:0;
+}
+button{
+      
+    font-family: 'Bungee', cursive; 
+    padding:1em 5em;
+    color:white;
+    text-shadow: 2px 2px 10px white;
+    background-color: rgba(0, 0, 0, 0);
+    border:none;
+    animation: neonb 0.5s infinite linear; 
+}
+@keyframes neonb{
+    0%{
+        opacity:1;
+    }
+    100%{
+        opacity:0.2;
+    }
+}
+
+#cont1{left:20%;}
+#cont2{left:50%;}
+#cont3{left:80%;}
+#container1,#container2,#container3{
+    position:absolute;
+    display:flex;
+    width:80%;
+    height:80vh;
+    top:10%;
+    left:10%;
+    background-color:white;
+    opacity:0;
+    transition:2s all linear;
+    text-align: center;
+}
+#me{
+    width:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#me img{
+    
+    width:50%;
+
+}
+#textes{
+    width:50%;
+}
+#textPro{
+    font-family: 'Roboto Mono', monospace;
+}
+
+#MenuP{
+    position:absolute;
+    top:90%;
+    left:50%;
+    transform: translateX(-50%) translateY(-15%);
+    color:white;
+    text-decoration: none;
+    text-align: center;
+    opacity:0.5;
+}
+#MenuP:hover{
+    opacity:1;
+}
+#traitM{
+    position:absolute;
+    width:2px;
+    height:20px;
+    left:50%;
+    background-color:white;
+    animation: updown 1s infinite linear; 
+    
+}
