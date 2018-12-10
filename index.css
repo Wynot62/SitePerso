@@ -13,8 +13,10 @@ body{
 #title{
     position: absolute;
     color:white;
-    font-size: 110px;
-    left:35%;
+    font-size: 7.5vw;
+    
+    left:50%;
+    transform: translateX(-50%);
     opacity:1;
     text-shadow: 5px 5px 50px rgb(252, 252, 252);
     z-index:10;
@@ -28,34 +30,38 @@ body{
         opacity:0.2;
     }
 }
+#mid img{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width:40%;
+    transform: translateX(-50%) translateY(-50%);
+    
+}
 .link{
-    position:relative;
+    position:absolute;
     text-align: center;
-    width:10%;
-    height: 50px;
-    left:45%;
-    top:5%;
+    width:20%;
+    transform: translateX(-50%) translateY(-50%);
+    left:50%;
+    top:85%;
     opacity:0.2;
     
 }
 .link:hover{
     opacity:1;
 }
-#mid img{
-    margin-top:15%;
-    margin-left:50%;
-    transform: translateX(-50%) translateY(-15%);
-}
+
 #portfolio{
-   
+    
     color:white;
     text-decoration: none;
     text-align: center;
 }
 #trait{
     position:absolute;
-    width:2px;
-    height:20px;
+    width:2%;
+    height:2vh;
     left:50%;
     background-color:white;
     animation: updown 1s infinite linear; 
@@ -63,10 +69,10 @@ body{
 }
 @keyframes updown{
     0%{
-        height:20px;
+        height:2vh;
     }
     100%{
-        height:40px;
+        height:6vh;
     }
 }
 /* page principal */
@@ -76,7 +82,9 @@ body{
     perspective: 1000px;
 }
 #fond{
-    position: relative;
+    background-image: url(tigre/tigre.jpg) ;
+    background-size:cover;
+    background-position:center;
     width:100%;
     height:100vh;
     
@@ -220,9 +228,10 @@ button{
 #cont1{left:20%;}
 #cont2{left:50%;}
 #cont3{left:80%;}
-#container1,#container2,#container3{
+#container1,#container2,#container3,#container4{
     position:absolute;
     display:flex;
+    flex-flow: row wrap;
     width:80%;
     height:80vh;
     top:10%;
@@ -232,6 +241,7 @@ button{
     transition:5s all linear;
     text-align: center;
 }
+
 #me{
     width:50%;
     display: flex;
@@ -246,7 +256,27 @@ button{
 #textes{
     width:50%;
 }
+#Tpro{
+    width:100%;
+}
+.illus{
+    width:100%;
+}
+.list{
+    list-style-type: none;
+}
+.list #vert{
+    color:green;
+}
+.list #orange{
+    color:orange;
+}
+.list #rouge{
+    color:red;
+}
+
 #textPro{
+    width:100%;
     font-family: 'Roboto Mono', monospace;
 }
 
@@ -271,4 +301,35 @@ button{
     background-color:white;
     animation: updown 1s infinite linear; 
     
+}
+@media only screen and (max-width: 800px){
+    #fond{
+        background-image:url(Ecran-640.jpg); 
+        background-size:cover;
+    }
+    .imganim{
+        display:none;
+    }
+    #boutton{
+        display: inline-block;
+        text-align: center;
+        opacity:1;
+    }
+    button{padding:1em;}
+    #container1,#container2,#container3,#container4{
+        display: flex;
+        flex-flow: row wrap;
+        top:26%;
+        max-height: 65%;
+        overflow: scroll;
+        opacity:1;
+    }
+    #me{
+        width:100%;
+        margin-top:25%;
+    }
+    #textes{
+        width:100%;
+        margin-top:25%;
+    }
 }
