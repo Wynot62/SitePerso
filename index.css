@@ -1,11 +1,31 @@
 body{
     margin:0;
     padding:0;
-    font-family: 'Bungee', cursive;
     
+    font-family: 'Megrim', cursive;
+    font-family: 'Monoton', cursive;
+    overflow: hidden;
 }
 /* page attente */
+#anim{
+    position:absolute;
+    z-index:10000;
+    width:100%;
+    display:flex;
+    flex-flow: row wrap;
+    perspective: 500px;
+    perspective-origin: 50% 50%;
+}
+#anim img{
+    position:relative;
+    width:33%;
+    height:33vh;
+    background:linear-gradient(black,white);
+    opacity: 0.5;
+    transition:2s all ease-in-out;
+}
 .allA{
+    z-index:1;
     width:100%;
     height: 100vh;
     background-color:black;
@@ -90,138 +110,35 @@ body{
     
     
 }
-.all img{
-    position: absolute;
-    box-shadow: 2px 2px 10px rgba(255, 255, 255,0.5);
-    transition: all 7.5s ease-in-out;
-}
 
-#a{
-    left:20%;
-    top:8%;
-}
-#b{
-    left:32%;
-    top:2%;
-}
-#c{
-    left:49%;
-    top:7%;
-}
-#d{
-    left:64%;
-    top:6%;
-}
-#e{
-    left:75%;
-    top:5%;
-}
-#f{
-    left:85%;
-    top:8%;
-}
-#g{
-    left:10%;
-    top:30%;
-}
-#h{
-    left:25%;
-    top:30%;
-}
-#i{
-    left:40%;
-    top:35%;
-}
-#j{
-    left:54%;
-    top:30%;
-}
-#k{
-    left:72%;
-    top:35%;
-}
-#l{
-    left:80%;
-    top:30%;
-}
-#m{
-    left:6%;
-    top:55%;
-}
-#n{
-    left:20%;
-    top:50%;
-}
-#o{
-    left:40%;
-    top:57%;
-}
-#p{
-    left:58%;
-    top:52%;
-}
-#q{
-    left:64%;
-    top:56%;
-}
-#r{
-    left:80%;
-    top:58%;
-}
-#s{
-    left:2%;
-    top:70%;
-}
-#t{
-    left:10%;
-    top:74%;
-}
-#u{
-    left:30%;
-    top:70%;
-}
-#v{
-    left:45%;
-    top:75%;
-}
-#w{
-    left:58%;
-    top:75%;
-}
-#x{
-    left:64%;
-    top:75%;
-}
-#y{
-    left:80%;
-    top:70%;
-}
 #boutton{
+    background-color:rgb(29, 27, 27);
+    border-bottom:3px solid orange;
     position: absolute;
     display: flex;
     justify-content: space-around;
-    width:90%;
+    width:100%;
     height:10vh;
     top:0;
-    left:5%;
+    
     opacity:0;
 }
 button{
-      
-    font-family: 'Bungee', cursive; 
+    font-family: 'Megrim', cursive;  
+    font-size:2em;
     padding:1em 5em;
     color:white;
     text-shadow: 2px 2px 10px white;
     background-color: rgba(0, 0, 0, 0);
     border:none;
-    animation: neonb 0.5s infinite linear; 
+    animation: neonb 3s infinite linear; 
 }
 @keyframes neonb{
     0%{
-        opacity:1;
+        color:white;
     }
     100%{
-        opacity:0.2;
+        color:orange;
     }
 }
 
@@ -232,36 +149,43 @@ button{
     position:absolute;
     display:flex;
     flex-flow: row wrap;
-    width:80%;
+    width:100%;
     height:80vh;
     top:10%;
-    left:10%;
-    background-color:white;
+    
+    
+    
     opacity:0;
     transition:5s all linear;
     text-align: center;
+    
 }
+
+
 /*container accueil*/
 #me{
     width:50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(Sanstitre.png);
+    background-size:cover;
 }
-#me img{
-    
-    width:50%;
 
-}
 #textes{
     width:50%;
+    
 }
 /*container compétences*/
 #Tpro{
     width:100%;
+    font-size:2em;
+    font-family: 'Megrim', cursive;
 }
 .illus{
     width:100%;
+    font-family: 'Megrim', cursive; 
+    font-size: 2em;
 }
 .list{
     list-style-type: none;
@@ -276,37 +200,71 @@ button{
     color:red;
 }
 #Portfolio{
+    z-index:100;
+    display:flex;
+    
+    justify-content: space-around;
+    align-items: center;
     width:100%;
     height:50%;
-    background-color:rgb(39, 36, 36);
+    background-color:rgb(219, 219, 219);
+}
+
+#Portfolio #PFC{
+    width:30%;
+    height:50%;
+    background-image: url(LiensPFC.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#Portfolio #Morp{
+    width:30%;
+    height:50%;
+    background-image: url(LiensMorpion.png);
+    background-position: top;
+    background-repeat: no-repeat;
+}
+#hobbie{
+    font-family: 'Megrim', cursive; 
+    width:100%;
+    display:flex;
+    flex-flow: row wrap;
+}
+#hobbie span{
+    width:100%;
+    height:10vh;
+    
+}
+#hobbieimg{
+    width:100%;
+    height:10vh;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
 }
 #textPro{
     width:100%;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Michroma', sans-serif;
+    
 }
 
 #MenuP{
+    width:75%;
+    background-color:rgb(29, 27, 27);
+    border-top:2px solid orange;
+    padding:2% 1%;
     position:absolute;
-    top:90%;
+    top:93.5%;
     left:50%;
     transform: translateX(-50%) translateY(-15%);
-    color:white;
+    color:rgb(255, 255, 255);
     text-decoration: none;
     text-align: center;
-    opacity:0.5;
+    font-family: 'Megrim', cursive;
+    animation: neonb 3s infinite linear; 
 }
-#MenuP:hover{
-    opacity:1;
-}
-#traitM{
-    position:absolute;
-    width:2px;
-    height:20px;
-    left:50%;
-    background-color:white;
-    animation: updown 1s infinite linear; 
-    
-}
+
+
 @media only screen and (max-width: 800px){
     #fond{
         background-image:url(Ecran-640.jpg); 

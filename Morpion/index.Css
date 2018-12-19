@@ -53,7 +53,7 @@ body{
 #mode{
     border:none;
     background:radial-gradient(white,gray,black);
-    padding:1em 2em;
+    padding:5% 2%;
     font-family: 'Unlock', cursive;
 }
 #result{
