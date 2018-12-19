@@ -52,7 +52,7 @@ body{
     opacity:1;
 }
 
-#portfolio{
+#Enter{
     
     color:white;
     text-decoration: none;
@@ -241,7 +241,7 @@ button{
     transition:5s all linear;
     text-align: center;
 }
-
+/*container accueil*/
 #me{
     width:50%;
     display: flex;
@@ -256,6 +256,7 @@ button{
 #textes{
     width:50%;
 }
+/*container compétences*/
 #Tpro{
     width:100%;
 }
@@ -274,7 +275,11 @@ button{
 .list #rouge{
     color:red;
 }
-
+#Portfolio{
+    width:100%;
+    height:50%;
+    background-color:rgb(39, 36, 36);
+}
 #textPro{
     width:100%;
     font-family: 'Roboto Mono', monospace;
