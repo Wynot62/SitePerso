@@ -7,7 +7,7 @@ body{
     background-image: url(thumb-1920-224118.jpg);
     background-size:cover;
     background-position:center;
-    font-family: 'Unlock', cursive;
+    font-family: 'Megrim', cursive; 
     
 }
 
@@ -19,6 +19,7 @@ body{
     color:rgb(88, 86, 86);
     font-size:2em;
 }
+
 #central{
     display:flex;
     justify-content: center;
@@ -26,6 +27,14 @@ body{
     width:50%;
     height:85vh;
     
+}
+#fleche{
+    position:absolute;
+    top:10%;
+    left:25%;
+}
+#fleche img{
+    width:50px;
 }
 #statueL{
     width:25%;
