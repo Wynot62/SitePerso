@@ -136,5 +136,7 @@ footer{
     #statueL{
         display:none;
     }
-    
+    #result{
+        font-size:2em;
+    }
 }
