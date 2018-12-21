@@ -281,6 +281,7 @@ button{
         width:100%;padding:0em;}
     #container1,#container2,#container3,#container4{
         display: flex;
+        justify-content: center;
         flex-flow: row wrap;
         top:15%;
         max-height: 80%;
@@ -291,11 +292,13 @@ button{
         display:none;
     }
     #me{
-        width:100%;
+        margin-top:10vh;
+        width:50%;
+        height:20vh;
         
     }
     #textes{
-        top:5%;
+        margin-top:10vh;
         width:100%;
        
     }
