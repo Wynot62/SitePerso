@@ -1,10 +1,12 @@
 body{
     margin:0;
     padding:0;
-    
+    height:100%;
+    display:flex;
+    flex-flow: row wrap;
     font-family: 'Megrim', cursive;
     font-family: 'Monoton', cursive;
-    overflow: hidden;
+    
 }
 /* page attente */
 #anim{
@@ -148,6 +150,7 @@ button{
 #container1,#container2,#container3,#container4{
     position:absolute;
     display:flex;
+    justify-content: center;
     flex-flow: row wrap;
     width:100%;
     height:80vh;
@@ -160,6 +163,9 @@ button{
     text-align: center;
     
 }
+
+ 
+
 
 
 /*container accueil*/
@@ -184,6 +190,8 @@ button{
 }
 .illus{
     width:100%;
+    background-color:rgba(199, 157, 78, 0.3);
+    border:1px rgb(0, 0, 0) solid;
     font-family: 'Megrim', cursive; 
     font-size: 2em;
 }
@@ -207,7 +215,8 @@ button{
     align-items: center;
     width:100%;
     height:50%;
-    background-color:rgb(219, 219, 219);
+    background-color:rgba(199, 157, 78, 0.3);
+    border:1px rgb(0, 0, 0) solid;
 }
 
 #Portfolio #PFC{
@@ -227,42 +236,35 @@ button{
 #hobbie{
     font-family: 'Megrim', cursive; 
     width:100%;
+    height:30%;
     display:flex;
     flex-flow: row wrap;
+    background-color:rgba(199, 157, 78, 0.3);
+    border:1px rgb(0, 0, 0) solid;
+    
 }
 #hobbie span{
     width:100%;
-    height:10vh;
+    height:5vh;
     
 }
 #hobbieimg{
     width:100%;
-    height:10vh;
     display:flex;
     justify-content: space-around;
     align-items: center;
 }
+#hobbieimg img{
+    width:5%;
+    transition:all 1s ease-in-out;
+}
+
 #textPro{
     width:100%;
     font-family: 'Michroma', sans-serif;
     
 }
 
-#MenuP{
-    width:75%;
-    background-color:rgb(29, 27, 27);
-    border-top:2px solid orange;
-    padding:2% 1%;
-    position:absolute;
-    top:93.5%;
-    left:50%;
-    transform: translateX(-50%) translateY(-15%);
-    color:rgb(255, 255, 255);
-    text-decoration: none;
-    text-align: center;
-    font-family: 'Megrim', cursive;
-    animation: neonb 3s infinite linear; 
-}
 
 
 @media only screen and (max-width: 800px){
@@ -273,6 +275,7 @@ button{
     #boutton{
         display: inline-block;
         text-align: center;
+        position: fixed;
         height: 25vh;
         opacity:1;
         z-index:100;
@@ -284,7 +287,7 @@ button{
         display: flex;
         justify-content: center;
         flex-flow: row wrap;
-        top:15%;
+        top:25vh;
         max-height: 80%;
         overflow: scroll;
         opacity:1;
@@ -298,12 +301,24 @@ button{
         height:30vh;
         
     }
-    #container2,#container3,#container4 #textes{
-        top:30vh;
-    }
+    
     #textes{
         
         width:100%;
+       
+    }
+    #hobbie{
+        width:100%;
+        height:20%;
+    }
+    #hobbieimg{
+        display: flex;
+        justify-content:space-around;
+        width:100%;
+       
+    }
+    #hobbieimg img{
+       width:10%;
        
     }
 }
