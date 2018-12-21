@@ -273,7 +273,8 @@ button{
     #boutton{
         display: inline-block;
         text-align: center;
-        height: 15vh;
+        height: 19vh;
+        opacity:1;
         
     }
     button{
@@ -286,12 +287,15 @@ button{
         overflow: scroll;
         opacity:1;
     }
+    #container2,#container3,#container4{
+        display:none;
+    }
     #me{
         width:100%;
-        margin-top:25%;
+        
     }
     #textes{
         width:100%;
-        margin-top:25%;
+       
     }
 }
