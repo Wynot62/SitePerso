@@ -1,0 +1,33 @@
+#vert{
+    
+    color:green;
+}
+#orange{
+    color:orange;
+    display:none;
+}
+#rouge{
+    
+    color:red;
+    display:none;
+}
+@media screen and (min-width:1000px){
+    #rouge{
+        display:block;
+    }
+    #vert{
+    display:none;
+    }
+}
+
+@media screen and (max-width:400px){
+    #orange{
+        display:block;
+    }
+    #rouge{
+        display:none;
+        }
+        #vert{
+            display:none;
+        }
+}
