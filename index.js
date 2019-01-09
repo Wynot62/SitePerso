@@ -1,52 +1,44 @@
+function ouverture() {
+    document.getElementById("top").style.top = "-50vh";
+    document.getElementById("Welcome").style.top = "0";
+    document.getElementById("Welcome").style.transform = "translateX(-50%)translateY(-100%)";
+    document.getElementById("bot").style.top = "100vh";
+    setTimeout(function () {
+        document.getElementById("top").style.display = "none";
+        document.getElementById("Welcome").style.display = "none";
+        document.getElementById("bot").style.display = "none";
 
+    }, 5000)
+}
+c1 = document.getElementById("left");
+c1b = document.getElementById("leftback");
+c2 = document.getElementById("topright");
+c2b = document.getElementById("topBback");
+c3 = document.getElementById("botright");
+c3b = document.getElementById("botBback");
+document.addEventListener("click", function (event) {
+    if (event.target == document.getElementById("leftfront")) {
+        c1.style.transform = "rotateY(180deg)";
 
-function alea() {
-    for (i = 0; i < 9; i++) {
-        b = Math.floor(Math.random() * 3000);
-        moveimg(i, b)
-        
-    }
-}
-function moveimg(i, b) {
-    setTimeout(() => {
-        
-        document.getElementsByTagName("img")[i].style.transform = "translateZ(500px)";
-        document.getElementsByTagName("img")[i].style.opacity = "0";
-        setTimeout(() => {
-            document.getElementsByTagName("img")[i].style.display = "none";
-        }, 5000);
-    }, b)
-}
+        c2.style.transform = "rotateY(0deg)";
 
-function cont() {
-    setTimeout(() => {
-        document.getElementById("container1").style.opacity = "0.8";
-        document.getElementById("boutton").style.opacity = "0.8";
-        
-    }, 250);
-}
+        c3.style.transform = "rotateY(0deg)";
 
-function bidon(p) {
-    
-    var cont1 = document.getElementById("container1");
-    var cont2 = document.getElementById("container2");
-    var cont3 = document.getElementById("container3");
-    var cont4 = document.getElementById("container4");
-    cont1.style.display = "none";
-    cont2.style.display = "none";
-    cont3.style.display = "none";
-    cont4.style.display = "none";
-    if (p == 1) {
-        cont4.style.opacity = "0.8";
-        cont4.style.display="flex";
-        
     }
-    else if (p == 2) {
-        cont2.style.opacity = "0.8";
-        cont2.style.display="flex";
+    else if (event.target == document.getElementById("topRfront")) {
+        c1.style.transform = "rotateY(0deg)";
+
+        c2.style.transform = "rotateY(180deg)";
+
+        c3.style.transform = "rotateY(0deg)";
+
     }
-    else {
-        cont3.style.opacity = "0.8";
-        cont3.style.display="flex";
+    else if (event.target == document.getElementById("botRfront")) {
+        c1.style.transform = "rotateY(0deg)";
+
+        c2.style.transform = "rotateY(0deg)";
+
+        c3.style.transform = "rotateY(180deg)";
     }
-}
+})
+

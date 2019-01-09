@@ -1,324 +1,255 @@
 body{
     margin:0;
     padding:0;
+    width:100%;
     height:100%;
-    display:flex;
-    flex-flow: row wrap;
-    font-family: 'Megrim', cursive;
-    font-family: 'Monoton', cursive;
-    
+   
 }
-/* page attente */
-#anim{
-    position:absolute;
-    z-index:10000;
-    width:100%;
-    display:flex;
-    flex-flow: row wrap;
-    perspective: 500px;
-    perspective-origin: 50% 50%;
-}
-#anim img{
-    position:relative;
-    width:33%;
-    height:33vh;
-    background:linear-gradient(black,white);
-    opacity: 0.5;
-    transition:2s all ease-in-out;
-}
-.allA{
-    z-index:1;
-    width:100%;
-    height: 100vh;
-    background-color:black;
-}
-#title{
+#top{
     position: absolute;
-    color:white;
-    font-size: 7.5vw;
+    top:0;
+    width: 100vw;
+    height:50vh;
+    background-image:url(top2.png);
+    background-size:cover;
     
+    transition: all 5s ease-in-out;
+    display:flex;
+    flex-flow: row wrap;
+    text-align:center;
+    z-index:10;
+    
+}
+#top #Twynot{
+    position: absolute;
+    width:100%;
+    font-size:4em;
+    font-family: 'Notable', sans-serif;
+    color:rgba(0, 0, 0, 0.678);
+    text-shadow:5px 5px 10px rgb(255, 255, 255);
+}
+#top #STwynot{
+    position:absolute;
+    top:25%;
+    width:100%;
+    font-size:2em;
+    font-family: 'Yesteryear', cursive;
+    color:rgba(0, 0, 0, 0.678);
+    text-shadow:5px 5px 10px rgb(255, 255, 255);
+}
+
+#Welcome{
+    position:absolute;
+    z-index:100;
+    top:45%;
     left:50%;
     transform: translateX(-50%);
-    opacity:1;
-    text-shadow: 5px 5px 50px rgb(252, 252, 252);
-    z-index:10;
-    animation: neon 0.5s infinite linear; 
+    transition: all 5s ease-in-out;
 }
-@keyframes neon{
-    0%{
-        opacity:1;
-    }
-    100%{
-        opacity:0.2;
-    }
+#Welcome img{
+    width:20vw;
+    opacity:0.5;
 }
-#mid img{
+#Welcome #Wimg{
     position: absolute;
-    top:50%;
+    font-family: 'Poller One', cursive;
+    font-size:3em;
+    top:1.8vh;
     left:50%;
-    width:40%;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%)translateY(-20%);
     
 }
-.link{
-    position:absolute;
-    text-align: center;
-    width:20%;
-    transform: translateX(-50%) translateY(-50%);
-    left:50%;
-    top:85%;
-    opacity:0.2;
-    
-}
-.link:hover{
-    opacity:1;
-}
-
-#Enter{
-    
-    color:white;
-    text-decoration: none;
-    text-align: center;
-}
-#trait{
-    position:absolute;
-    width:2%;
-    height:2vh;
-    left:50%;
-    background-color:white;
-    animation: updown 1s infinite linear; 
-    
-}
-@keyframes updown{
-    0%{
-        height:2vh;
-    }
-    100%{
-        height:6vh;
-    }
-}
-/* page principal */
-.all{
-    
-    width:100%;
-    perspective: 1000px;
-}
-#fond{
-    background-image: url(tigre/tigre.jpg) ;
+#bot{
+    position: absolute;
+    width: 100vw;
+    top:50vh;
+    height:50vh;
+    background-image:url(bot2.png);
     background-size:cover;
-    background-position:center;
+    transition: all 5s ease-in-out;
+    text-align:center;
+    z-index:10;
+}
+#bot #CreaBy{
+    position: absolute;
     width:100%;
+    top:55%;
+    font-size:3em;
+    font-family: 'Notable', sans-serif;
+    text-shadow:5px 5px 10px rgb(255, 255, 255);
+    color:rgba(0, 0, 0, 0.678);
+}
+#bot #STcrea{
+    position: absolute;
+    width:100%;
+    top:75%;
+    font-size:1.5em;
+    font-family: 'Yesteryear', cursive;
+    color:rgba(0, 0, 0, 0.678);
+    text-shadow:5px 5px 10px rgb(255, 255, 255);
+}
+#container{
+    display:flex;
+    flex-flow: row wrap;
+    width:100vw;
     height:100vh;
-    
+    z-index:-3;
     
 }
 
-#boutton{
-    background-color:rgb(29, 27, 27);
-    border-bottom:3px solid orange;
-    position: absolute;
-    display: flex;
-    justify-content: space-around;
+/*    LEFT====================== */
+#left{
+    width:50vw;
+    height:100vh;
+    transition: all 2s ease-in-out;
+    background-image:url(code.jpg);
+    display:flex;
+    flex-flow: row wrap;
+    transform-style: preserve-3d;
+    
+}
+#leftfront{
+    backface-visibility: hidden;
+    width:100%;
+}
+/* LEFT BACK CONTENT */
+#Tcomp{
     width:100%;
     height:10vh;
-    top:0;
-    
-    opacity:0;
+    font-family: 'Notable', sans-serif;
+    color:rgba(255, 255, 255, 0.678);
+    text-shadow:5px 5px 10px rgb(37, 36, 36);
+    font-size:3em;
 }
-button{
-    font-family: 'Megrim', cursive;  
-    font-size:2em;
-    padding:1em 5em;
-    color:white;
-    text-shadow: 2px 2px 10px white;
-    background-color: rgba(0, 0, 0, 0);
-    border:none;
-    animation: neonb 3s infinite linear; 
-}
-@keyframes neonb{
-    0%{
-        color:white;
-    }
-    100%{
-        color:orange;
-    }
-}
-
-#cont1{left:20%;}
-#cont2{left:50%;}
-#cont3{left:80%;}
-#container1,#container2,#container3,#container4{
-    position:absolute;
-    display:flex;
-    justify-content: center;
-    flex-flow: row wrap;
-    width:100%;
-    height:80vh;
-    top:10%;
-    
-    
-    
-    opacity:0;
-    transition:5s all linear;
+#STcomp{
+    margin-top:20vh;
     text-align: center;
-    
-}
-
- 
-
-
-
-/*container accueil*/
-#me{
-    width:50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(Sanstitre.png);
-    background-size:cover;
-}
-
-#textes{
-    width:50%;
-    
-}
-/*container compétences*/
-#Tpro{
     width:100%;
+    height:10vh;
+    font-family: 'Yesteryear', cursive;
+    color:rgba(255, 255, 255, 0.678);
+    text-shadow:5px 5px 10px rgb(37, 36, 36);
+    font-size:1.5em;
+}
+#STcomp span{
+   color:black;
+    background-color:rgb(255, 255, 255);
+}
+#bcomp{
+    width:100%;
+    margin-top:40vh;
+    height:10vh;
+    text-align: center;
+    font-family: 'Poller One', cursive;
+    color:rgba(0, 0, 0, 0.678);
+    text-shadow:5px 5px 10px rgb(255, 255, 255);
     font-size:2em;
-    font-family: 'Megrim', cursive;
 }
-.illus{
-    width:100%;
-    background-color:rgba(199, 157, 78, 0.3);
-    border:1px rgb(0, 0, 0) solid;
-    font-family: 'Megrim', cursive; 
-    font-size: 2em;
+
+#leftback{
+    position:absolute;
+    backface-visibility: hidden;
+    width:50vw;
+    height:100vh;
+    transform: rotateY(180deg);
+    transition: all 2s ease-in-out;
+    background-color:rgb(187, 185, 185);
 }
-.list{
-    list-style-type: none;
+#TcompB{
+    background-color:rgba(134, 134, 134, 0.575);
+    border-bottom:4px solid rgb(0, 0, 0);
+    font-size:2em;
+    text-align: center;
+    font-family: 'Notable', sans-serif;
 }
-.list #vert{
-    color:green;
+.TextCompB{
+    text-align: center;
+    margin-top:5vh;
+    font-family: 'Cardo', serif;
 }
-.list #orange{
-    color:orange;
+.Langage{
+    margin-top:5vh;
+    background-color:rgba(223, 145, 43, 0.575);
+    border:2px solid rgb(0, 0, 0);
+    padding-bottom:1vh;
 }
-.list #rouge{
-    color:red;
+.langagename{
+    padding-top:1vh;
+    font-family: 'Yesteryear', cursive;
 }
-#Portfolio{
-    z-index:100;
+.show{display:none;}
+/* RIGHT */
+#right{
+    width:50vw;
+    height:100vh;
+    
+}
+/* right top */
+#topright{
+    transform-style: preserve-3d;
+    transition: all 2s ease-in-out;
+}
+#topRfront{
     display:flex;
+    width:50vw;
+    height:50vh;
+    background-image:url(cravate.jpg);
+    background-position:center;
+    background-size:cover;
     
-    justify-content: space-around;
-    align-items: center;
-    width:100%;
-    height:50%;
-    background-color:rgba(199, 157, 78, 0.3);
-    border:1px rgb(0, 0, 0) solid;
-}
-
-#Portfolio #PFC{
-    width:30%;
-    height:50%;
-    background-image: url(LiensPFC.png);
-    background-position: center;
-    background-repeat: no-repeat;
-}
-#Portfolio #Morp{
-    width:30%;
-    height:50%;
-    background-image: url(LiensMorpion.png);
-    background-position: top;
-    background-repeat: no-repeat;
-}
-#hobbie{
-    font-family: 'Megrim', cursive; 
-    width:100%;
-    height:30%;
-    display:flex;
-    flex-flow: row wrap;
-    background-color:rgba(199, 157, 78, 0.3);
-    border:1px rgb(0, 0, 0) solid;
+    
     
 }
-#hobbie span{
+#TPres{
     width:100%;
-    height:5vh;
+    height:10vh;
+    font-family: 'Notable', sans-serif;
+    color:rgba(255, 255, 255, 0.678);
+    text-shadow:5px 5px 10px rgb(37, 36, 36);
+    font-size:3em;
+}
+/* right top back*/
+#topRback{
+    position:absolute;
+    top:0;
+    width:50vw;
+    height:50vh;
+    transform: rotateY(180deg);
+    transition: all 2s ease-in-out;
+    background-color:rgb(255, 255, 255);
+    backface-visibility: hidden;
+}
+
+/* right bot*/
+#botright{
+    transform-style: preserve-3d;
+    transition: all 2s ease-in-out;
+}
+#botRfront{
+    width:50vw;
+    height:50vh;
+    background-image:url(portfo.jpg);
+    background-position:center;
+    background-size:cover;
+    backface-visibility: hidden;
     
 }
-#hobbieimg{
+#Tport{
     width:100%;
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
+    height:10vh;
+    font-family: 'Notable', sans-serif;
+    color:rgba(255, 255, 255, 0.678);
+    text-shadow:5px 5px 10px rgb(37, 36, 36);
+    font-size:3em;
 }
-#hobbieimg img{
-    width:5%;
-    transition:all 1s ease-in-out;
+#botBback{
+    position:absolute;
+    top:0vh;
+    width:50vw;
+    height:50vh;
+    transform: rotateY(180deg);
+   transition: all 2s ease-in-out;
+   background-color:rgb(255, 255, 255);
+    backface-visibility: hidden;
 }
 
-#textPro{
-    width:100%;
-    font-family: 'Michroma', sans-serif;
-    
-}
-
-
-
-@media only screen and (max-width: 800px){
-   
-    .imganim{
-        display:none;
-    }
-    #boutton{
-        display: inline-block;
-        text-align: center;
-        position: fixed;
-        height: 25vh;
-        opacity:1;
-        z-index:100;
-        
-    }
-    button{
-        width:100%;padding:0em;opacity:1;}
-    #container1,#container2,#container3,#container4{
-        display: flex;
-        justify-content: center;
-        flex-flow: row wrap;
-        top:25vh;
-        max-height: 80%;
-        overflow: scroll;
-        opacity:1;
-    }
-    #container2,#container3,#container4{
-        display:none;
-    }
-    #me{
-        margin-top:10vh;
-        width:50%;
-        height:30vh;
-        
-    }
-    
-    #textes{
-        
-        width:100%;
-       
-    }
-    #hobbie{
-        width:100%;
-        height:20%;
-    }
-    #hobbieimg{
-        display: flex;
-        justify-content:space-around;
-        width:100%;
-       
-    }
-    #hobbieimg img{
-       width:10%;
-       
-    }
-}
