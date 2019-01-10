@@ -13,7 +13,7 @@ body{
     height:50vh;
     background-image:url(top2.png);
     background-size:cover;
-    
+    background-position:bottom;
     transition: all 5s ease-in-out;
     display:flex;
     flex-flow: row wrap;
@@ -67,6 +67,7 @@ body{
     height:50vh;
     background-image:url(bot2.png);
     background-size:cover;
+    background-position:top;
     transition: all 5s ease-in-out;
     text-align:center;
     z-index:10;
@@ -113,7 +114,7 @@ body{
     backface-visibility: hidden;
     width:100%;
 }
-/* LEFT BACK CONTENT */
+
 #Tcomp{
     width:100%;
     height:10vh;
@@ -136,6 +137,7 @@ body{
    color:black;
     background-color:rgb(255, 255, 255);
 }
+
 #bcomp{
     width:100%;
     margin-top:40vh;
@@ -146,20 +148,21 @@ body{
     text-shadow:5px 5px 10px rgb(255, 255, 255);
     font-size:2em;
 }
-
+/* LEFT BACK CONTENT */
 #leftback{
     position:absolute;
     backface-visibility: hidden;
+    overflow:scroll;
     width:50vw;
     height:100vh;
     transform: rotateY(180deg);
     transition: all 2s ease-in-out;
-    background-color:rgb(230, 230, 230);
+    background-color:#F2F7F2;
 }
 #TcompB{
-    background-color:rgba(255, 255, 255, 0.575);
-    border-bottom:4px solid rgb(224, 108, 12);
-    color:rgb(224, 108, 12);
+    background-color:#668586;
+    border-bottom:2px solid #5B507A;
+    color:white;
     font-size:2em;
     text-align: center;
     font-family: 'Notable', sans-serif;
@@ -171,17 +174,18 @@ body{
 }
 .Langage{
     margin-top:5vh;
-    background-color:rgba(224, 108, 12,0.5);
-    border:2px solid rgb(224, 108, 12);
+    background-color:#668586;
+    border:2px solid #5B507A;
     padding-bottom:1vh;
 }
 .langagename{
     padding-top:1vh;
     font-family: 'Yesteryear', cursive;
 }
-.btn-primary{
-    background-color:orangered;
-    border-color:orange;
+#buttoncolors{
+    background-color:#668586;
+    box-shadow: inset 5px 5px 20px #5B507A;
+    border-color:#F2F7F2;
 }
 .show{display:none;}
 /* RIGHT */
@@ -197,21 +201,22 @@ body{
 }
 #topRfront{
     display:flex;
-    width:50vw;
+    flex-flow: row wrap;
+    justify-content: center;
     height:50vh;
-    background-image:url(cravate.jpg);
-    background-position:center;
-    background-size:cover;
-    
-    
-    
+    background-color:#eae0cc;
+   
+}
+#topRfront img{
+  
 }
 #TPres{
     width:100%;
     height:10vh;
     font-family: 'Notable', sans-serif;
-    color:rgba(255, 255, 255, 0.678);
-    text-shadow:5px 5px 10px rgb(37, 36, 36);
+    color:rgb(255, 255, 255);
+    border-bottom:5px solid #668586;
+    background-color:#4d6a6d;
     font-size:3em;
 }
 /* right top back*/
@@ -220,18 +225,19 @@ body{
     top:0;
     width:50vw;
     height:50vh;
+    overflow: scroll;
     transform: rotateY(180deg);
     transition: all 2s ease-in-out;
-    background-color:rgb(226, 226, 226);
+    background-color:#dcedff;
     backface-visibility: hidden;
 }
 #TitletopRback{
     width:100%;
     text-align:center;
     font-family: 'Notable', sans-serif;
-    color:rgb(21, 151, 211);
-    background-color:rgb(255, 255, 255);
-    border-bottom:1px solid rgb(21, 151, 211);
+    color:rgb(255, 255, 255);
+    background-color:#343F3E;
+    border-bottom:3px solid #8f91a2;
 
 }
 #Description{
@@ -240,10 +246,10 @@ body{
 #HF{
     width:100%;
     text-align: center;
-    color:rgb(21, 151, 211);
-    background-color:rgb(255, 255, 255);
     font-family: 'Notable', sans-serif;
-    border-bottom:1px solid rgb(21, 151, 211);
+    color:rgb(255, 255, 255);
+    background-color:#343F3E;
+    border-bottom:3px solid #8f91a2;
 }
 #hobbieimg{
     display:flex;
@@ -251,8 +257,8 @@ body{
     align-items:center;
     width:100%;
     height:20vh;
-    background-color:rgba(21, 151, 211, 0.45);
-    border:1px solid rgb(21, 151, 211);
+    background-color:rgba(255, 255, 255, 0.45);
+    border:1px solid #8f91a2;
     
 }
 #hobbieimg img{
@@ -288,16 +294,17 @@ body{
     height:50vh;
     transform: rotateY(180deg);
    transition: all 2s ease-in-out;
-   background-color:rgb(255, 255, 255);
+   background-color:#eae0cc;
     backface-visibility: hidden;
 }
+
 #TitlebotRback{
     width:100%;
     text-align:center;
     font-family: 'Notable', sans-serif;
-    color:rgb(33, 156, 22);
-    background-color:rgb(255, 255, 255);
-    border-bottom:2px solid rgb(33, 156, 22);
+    color:rgb(255, 255, 255);
+    background-color:#4d6a6d;
+    border-bottom:2px solid #a0a083;
 
 }
 #liens{
@@ -306,8 +313,8 @@ body{
     margin-top:5vh;
     width:100%;
     height:30vh;
-    background-color:rgba(172, 255, 47, 0.52);
-    border:1px solid green;
+    background-color:#a0a083;
+    border:1px solid #4d6a6d;
 
 }
 #liens a{
@@ -316,4 +323,3 @@ body{
     width:40%;
     height:100%
 }
-
