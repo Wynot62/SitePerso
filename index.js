@@ -44,4 +44,9 @@ document.addEventListener("click", function (event) {
 
 function displa(){
     document.getElementById("container").style.display="flex";
+    c1.style.transform="rotateY(180deg)";
+    c2.style.transform="rotateY(180deg)";
+    c3.style.transform="rotateY(180deg)";
+    
+
 }
