@@ -42,3 +42,6 @@ document.addEventListener("click", function (event) {
     }
 })
 
+function displa(){
+    document.getElementById("container").style.display="flex";
+}
