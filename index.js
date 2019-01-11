@@ -16,7 +16,7 @@ c2 = document.getElementById("topright");
 c2b = document.getElementById("topBback");
 c3 = document.getElementById("botright");
 c3b = document.getElementById("botBback");
-document.addEventListener("click", function (event) {
+document.addEventListener("click,touch", function (event) {
     if (event.target == document.getElementById("leftfront")) {
         c1.style.transform = "rotateY(180deg)";
 
