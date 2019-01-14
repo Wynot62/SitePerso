@@ -46,7 +46,7 @@ function displa(){
     document.getElementById("container").style.display="flex";
 
 }
-document.addEventListener("touchstart", function (event) {
+document.addEventListener("touchmove", function (event) {
     if (event.target == document.getElementById("leftfront")) {
         c1.style.transform = "rotateY(180deg)";
 
