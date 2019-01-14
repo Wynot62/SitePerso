@@ -367,17 +367,21 @@ body{
         display:none;
     }
     #left{
-       width:100%;
-      
+        width:100%;
+        transform:rotateY(180deg);
+        overflow: none;
     }
     #topright{
-       
+        transform:rotateY(180deg);
     }
-    
+    #botright{
+        transform:rotateY(180deg);
+    }
     #right{
         width:100%;
         
     }
+    
     #hobbieimg{
         height:15vh;
     }

@@ -46,28 +46,5 @@ function displa(){
     document.getElementById("container").style.display="flex";
 
 }
-document.addEventListener("touchmove", function (event) {
-    if (event.target == document.getElementById("leftfront")) {
-        c1.style.transform = "rotateY(180deg)";
 
-        c2.style.transform = "rotateY(0deg)";
 
-        c3.style.transform = "rotateY(0deg)";
-
-    }
-    else if (event.target == document.getElementById("topRfront")) {
-        c1.style.transform = "rotateY(0deg)";
-
-        c2.style.transform = "rotateY(180deg)";
-
-        c3.style.transform = "rotateY(0deg)";
-
-    }
-    else if (event.target == document.getElementById("botRfront")) {
-        c1.style.transform = "rotateY(0deg)";
-
-        c2.style.transform = "rotateY(0deg)";
-
-        c3.style.transform = "rotateY(180deg)";
-    }
-})
