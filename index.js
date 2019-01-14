@@ -16,7 +16,7 @@ c2 = document.getElementById("topright");
 c2b = document.getElementById("topBback");
 c3 = document.getElementById("botright");
 c3b = document.getElementById("botBback");
-document.addEventListener("click","touch", function (event) {
+document.addEventListener("click", function (event) {
     if (event.target == document.getElementById("leftfront")) {
         c1.style.transform = "rotateY(180deg)";
 
@@ -46,3 +46,28 @@ function displa(){
     document.getElementById("container").style.display="flex";
 
 }
+document.addEventListener("touchstart", function (event) {
+    if (event.target == document.getElementById("leftfront")) {
+        c1.style.transform = "rotateY(180deg)";
+
+        c2.style.transform = "rotateY(0deg)";
+
+        c3.style.transform = "rotateY(0deg)";
+
+    }
+    else if (event.target == document.getElementById("topRfront")) {
+        c1.style.transform = "rotateY(0deg)";
+
+        c2.style.transform = "rotateY(180deg)";
+
+        c3.style.transform = "rotateY(0deg)";
+
+    }
+    else if (event.target == document.getElementById("botRfront")) {
+        c1.style.transform = "rotateY(0deg)";
+
+        c2.style.transform = "rotateY(0deg)";
+
+        c3.style.transform = "rotateY(180deg)";
+    }
+})
