@@ -292,3 +292,24 @@ section{
     margin-top:10vh;
     height:5vh;
 }
+
+@media(max-width:400px){
+    #topaccueil #Twynot{font-size:4em;}
+    #topaccueil #STwynot{font-size:2em;}
+
+    #top{height:30vh;}
+    .nav{margin-top:0vh;}
+    #name{font-size:2.5em;}
+    #job{font-size:1.2em;}
+
+    #Blockpresentation{height:75vh;}
+    #BlockPortfolio{height:100vh}
+    #portfolio{top:0;height:100%;}
+    #imgportv{
+    height:75%;width:50%;padding:0;
+    }
+    #imgporth{
+    
+    height:50%;width:50%;padding:0;
+    }
+}
