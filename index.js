@@ -1,50 +1,71 @@
 function ouverture() {
-    document.getElementById("top").style.top = "-50vh";
-    document.getElementById("Welcome").style.top = "0";
-    document.getElementById("Welcome").style.transform = "translateX(-50%)translateY(-100%)";
-    document.getElementById("bot").style.top = "100vh";
-    setTimeout(function () {
-        document.getElementById("top").style.display = "none";
-        document.getElementById("Welcome").style.display = "none";
-        document.getElementById("bot").style.display = "none";
+  document.getElementById("topaccueil").style.top = "-50vh";
 
-    }, 5000)
+  document.getElementById("bot").style.top = "100vh";
+  setTimeout(function () {
+      document.getElementById("topaccueil").style.display = "none";
+      
+      document.getElementById("bot").style.display = "none";
+
+  }, 5000)
 }
-c1 = document.getElementById("left");
-c1b = document.getElementById("leftback");
-c2 = document.getElementById("topright");
-c2b = document.getElementById("topBback");
-c3 = document.getElementById("botright");
-c3b = document.getElementById("botBback");
-document.addEventListener("click", function (event) {
-    if (event.target == document.getElementById("leftfront")) {
-        c1.style.transform = "rotateY(180deg)";
-
-        c2.style.transform = "rotateY(0deg)";
-
-        c3.style.transform = "rotateY(0deg)";
-
-    }
-    else if (event.target == document.getElementById("topRfront")) {
-        c1.style.transform = "rotateY(0deg)";
-
-        c2.style.transform = "rotateY(180deg)";
-
-        c3.style.transform = "rotateY(0deg)";
-
-    }
-    else if (event.target == document.getElementById("botRfront")) {
-        c1.style.transform = "rotateY(0deg)";
-
-        c2.style.transform = "rotateY(0deg)";
-
-        c3.style.transform = "rotateY(180deg)";
-    }
-})
-
 function displa(){
-    document.getElementById("container").style.display="flex";
+  document.getElementById("container").style.display="block";
 
 }
 
 
+$(document).ready(function () {
+  $('[data-toggle="popover"]').popover();
+});
+
+
+
+
+
+var i = 0;
+
+addEventListener("wheel", function (event) {
+
+
+  var window_height = window.innerHeight;
+
+  var window_top_pos = window.pageYOffset;
+
+  var window_bottom_pos = (window_top_pos + window_height);
+
+
+
+
+
+
+  document.querySelectorAll("section").forEach(div => {
+
+    var element_height = div.clientHeight;
+
+    var element_top_pos = div.offsetTop;
+
+    var element_bottom_pos = (element_height + element_top_pos);
+
+
+
+    if (element_top_pos + 300 > window_bottom_pos) {
+      div.style.opacity = "0";
+    }
+    else {
+      div.style.opacity = "1";
+    }
+
+    if (element_bottom_pos - 300 < window_top_pos) {
+      div.style.opacity = "0";
+    }
+  
+  })
+})
+function clicktop(){
+  for(ind=1;ind>4;ind++){
+  document.getElementsByTagName("section")[ind].style.opacity="0";
+}
+
+  document.getElementById("top").style.opacity="1";
+}
