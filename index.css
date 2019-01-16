@@ -311,6 +311,9 @@ section{
     background-size:cover;
     background-position:top;
 }
+.show{
+    display:none;
+}
 @media(max-width:400px){
     #topaccueil #Twynot{font-size:4em;}
     #topaccueil #STwynot{font-size:2em;}
