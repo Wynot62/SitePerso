@@ -238,7 +238,8 @@ section{
     margin-top:60vh;
     display:flex;
     flex-flow: row wrap;
-    height:80vh;
+    justify-content: center;
+    height:40vh;
     
 }
 #titleportfolio{
@@ -252,9 +253,7 @@ section{
     -webkit-text-fill-color: transparent;
     font-family: 'Megrim', cursive;
 }
-#portfolio {
-   width:100%;
-}
+
 
 /* footer */
 
@@ -292,25 +291,38 @@ section{
     margin-top:10vh;
     height:5vh;
 }
-
+#Shifumi{
+    background-image:url(Captureshifumi.PNG);
+    background-size:cover;
+    background-position:top;
+}
+#Morpion{
+    background-image:url(Capturemorpion.PNG);
+    background-size:cover;
+    background-position:top;
+}
+#Sitecv{
+    background-image:url(CaptureSitecv.PNG);
+    background-size:cover;
+    background-position:top;
+}
+#Wordpress{
+    background-image:url(wordpress.PNG);
+    background-size:cover;
+    background-position:top;
+}
 @media(max-width:400px){
     #topaccueil #Twynot{font-size:4em;}
     #topaccueil #STwynot{font-size:2em;}
 
-    #top{height:30vh;opacity:1;}
+    #top{height:40vh;opacity:1;}
     .nav{margin-top:0vh;}
     #name{font-size:2.5em;}
     #job{font-size:1.2em;}
 
-    #Blockpresentation{height:75vh;opacity:1;}
-    #BlockCompetences{opacity:1;}
-    #BlockPortfolio{height:100vh;opacity:1;}
-    #portfolio{top:0;height:100%;}
-    #imgportv{
-    height:75%;width:50%;padding:0;
-    }
-    #imgporth{
-    
-    height:50%;width:50%;padding:0;
-    }
+    #Blockpresentation{height:90vh;opacity:1;}
+    #BlockCompetences{height:130vh;opacity:1;}
+    #BlockPortfolio{height:130vh;opacity:1;}
+    #listport{display:flex;
+    justify-content: center;}
 }
