@@ -297,13 +297,14 @@ section{
     #topaccueil #Twynot{font-size:4em;}
     #topaccueil #STwynot{font-size:2em;}
 
-    #top{height:30vh;}
+    #top{height:30vh;opacity:1;}
     .nav{margin-top:0vh;}
     #name{font-size:2.5em;}
     #job{font-size:1.2em;}
 
-    #Blockpresentation{height:75vh;}
-    #BlockPortfolio{height:100vh}
+    #Blockpresentation{height:75vh;opacity:1;}
+    #BlockCompetences{opacity:1;}
+    #BlockPortfolio{height:100vh;opacity:1;}
     #portfolio{top:0;height:100%;}
     #imgportv{
     height:75%;width:50%;padding:0;

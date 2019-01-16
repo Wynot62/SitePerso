@@ -27,7 +27,7 @@ var i = 0;
 
 addEventListener("wheel", function (event) {
 
-
+if(window.innerWidth>800){
   var window_height = window.innerHeight;
 
   var window_top_pos = window.pageYOffset;
@@ -61,11 +61,24 @@ addEventListener("wheel", function (event) {
     }
   
   })
-})
+}})
 function clicktop(){
   for(ind=1;ind>4;ind++){
   document.getElementsByTagName("section")[ind].style.opacity="0";
 }
 
   document.getElementById("top").style.opacity="1";
+}
+
+function clickaffiche(a){
+  if(a==1){
+    document.getElementById("Blockpresentation").style.opacity="1";
+  }
+  else if(a==2){
+    document.getElementById("BlockCompetences").style.opacity="1";
+  }
+  else if(a==3){
+    document.getElementById("BlockPortfolio").style.opacity="1";
+  }
+
 }
