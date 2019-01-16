@@ -17,6 +17,8 @@
 </head>
 
 <body>
+
+    <!--===================================================Animation accueil=================================================-->
     <div id="accueil" onclick=ouverture(),displa()>
         <div id="topaccueil">
             <p id="Twynot">Whynot</p>
@@ -30,8 +32,10 @@
         </div>
 
     </div>
-
+    <!--===================================================Container principal qui contient toute la page=================================================-->
     <div id="container" class="container-fluid col-12" style="margin:0;padding:0;">
+
+        <!--===================================================1er section avec les banière=================================================-->
         <section class="row col-12" id="top" style="margin:0;margin-bottom:35vh;padding:0;">
             <div id="Title">
                 <span id="name"><span class="blue">V</span>ALES Donovan</span>
@@ -62,6 +66,7 @@
                 </div>
             </div>
         </section>
+        <!--===================================================2e section avec le block présentation=================================================-->
         <section class="row col-lg-12" id="Blockpresentation" style="margin:0;margin-bottom:35vh;padding:0;">
             <div class="row col-lg-12" style="margin:0;padding:0;">
                 <span id="titlepresentation"><span class="blue">P</span>résentation</span>
@@ -89,6 +94,7 @@
                 </div>
             </div>
         </section>
+        <!--===================================================3e section avec le block compétence=================================================-->
         <section class="row col-lg-12" id="BlockCompetences" style="margin:0;margin-bottom:35vh;padding:0;">
             <div class="row col-lg-12" style="margin:0;padding:0;">
                 <span id="titleCompetences"><span class="blue">C</span>ompétences</span>
@@ -165,6 +171,7 @@
                 </div>
 
             </div>
+            <!--===================================================boutton bootstrap contenant le modal avec le cv=================================================-->
             <div class="bouttoncv">
                 <!-- Button to Open the Modal -->
                 <button type="button" class="btn btn-primary" id="buttoncolors" data-toggle="modal" data-target="#myModal">
@@ -197,11 +204,12 @@
                 </div>
             </div>
         </section>
+        <!--===================================================Dernière section contenant le portfolio=================================================-->
         <section class="row col-lg-12" id="BlockPortfolio" style="margin:0;padding:0;">
 
             <span id="titleportfolio"><span class="blue">P</span>ortfolio</span>
             <div id="portfolio" class="row col-sm-12 col-12" style="height:100%;width:100%;margin:0;padding:0;">
-                <div id="listport"class="row col-12" style="margin:0;padding:0;height:100%;width:100%;">
+                <div id="listport" class="row col-12" style="margin:0;padding:0;height:100%;width:100%;">
                     <a href="PFC/index.html" id="Shifumi" class="row offset-1 col-10 col-md-3" style="margin:0;height:20vh;background-color:rgba(128, 128, 128, 0.541);border-radius:10%;margin-bottom:1vh;"></a>
                     <a href="Morpion/index.html" id="Morpion" class="row offset-1 col-10 col-md-3" style="margin:0;height:20vh;background-color:rgba(128, 128, 128, 0.541);border-radius:10%;margin-bottom:1vh;"></a>
                     <a href="#" id="Sitecv" class="row offset-1 col-10 col-md-3" style="margin:0;height:20vh;background-color:rgba(128, 128, 128, 0.541);margin-bottom:1vh;border-radius:10%;"></a>
@@ -209,7 +217,7 @@
                 </div>
             </div>
         </section>
-
+        <!--===================================================Bas de page=================================================-->
         <div class="row col-12" id="end"></div>
         <div id="Basdepage" style="margin:0;width:100%;padding:0;">
             <div id="fleche"> <a id="LinkNav" class="nav-link" href="#container" onclick=clicktop()><i class="fas fa-angle-up"></i></a></div>
