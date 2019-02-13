@@ -1,231 +1,107 @@
 body{
-    width:100%;
-    height:100vh;
-    
-    background-image:url(snake.png);
+    width: 100%;
+    height: 100vh;
+    background-image:url(SitePC/blur.jpg);
     background-size:cover;
-    background-attachment: fixed;
-    font-family: 'Megrim', cursive;
-    
-}
-.banniere{
-    width:100%;
-    height:15vh;
-    z-index:10;
-    top:0;
+    background-position:center;
     display:flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-around;
-    position:fixed;
-}
-.banniere h1{
-    font-size:3em;
-}
-.blue{
-    color:rgb(54, 167, 182);
-    font-size:0.5em;
-}
-.connex{
-    height:6vh;
-    background:linear-gradient(to bottom,rgb(0, 28, 92),rgb(0, 70, 128),rgb(0, 170, 200));
-    font-size:2em;
-    border-radius:15%;
-    padding:5px;
-}
-.connex:hover{
-    background:linear-gradient(to top,rgb(0, 28, 92),rgb(0, 70, 128),rgb(0, 170, 200));
-}
-#containt{
-    
-    width:50%;
-    height:75vh;
-    border-radius: 15%;
-    display:flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    margin-top:20vh;
-    margin-left:40%;
-}
-
-#lien1,#lien2,#lien3,#lien4{
-    position:relative;
-    width:48%;
-    height:25vh;
-    background-color:rgb(134, 63, 63);
-    left:-100vw;
-    transition:all 1s;
-}
-#lien1:hover,#lien2:hover,#lien3:hover,#lien4:hover{
-    transform:scale(1.1);
-}
-#lien1{
-    background-image: url(preslink.PNG);
-    background-size:cover;
-    background-position:center;
-    border-radius:10%;
-    
-}
-#lien2{
-    background-image: url(complink.PNG);
-    background-size:cover;
-    background-position:center;
-    border-radius:10%;
-    
-}
-#lien3{
-    background-image: url(portlink.PNG);
-    background-size:cover;
-    background-position:center;
-    border-radius:10%;
-    
-}
-#lien4{
-    background-color:rgba(128, 128, 128, 0.295);
-    background-size:cover;
-    background-position:center;
-    border-radius:10%;
-    
-}
-
-
-/*---------page Pres---------------*/
-#containtPres{
-    margin-left:25%;
-    width:75%;
-    height:80vh;
-    margin-top:20vh;
-    display:flex;
-    flex-flow: row wrap;
     justify-content: center;
+    align-items: center;
 }
-
-.nav{
+#topaccueil{
+    position: absolute;
     top:0;
-    width: 10%;
-    height:100vh;
-    position:fixed;
-    background-color:rgba(68, 67, 67, 0.664);
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-    z-index:100;
-}
-#Pres{background-image: url(preslink.PNG);
-    background-size:cover;
-    background-position:center;
-    border-radius:10%;
-    width:150%;
-    height:20vh;}
-#Accueil{
-    background-image: url(Accueillink.PNG);
-    background-size:cover;
-    background-position:center;
-    border-radius:10%;
-    width:150%;
-    height:20vh;
-}
-#Comp{
-    background-image: url(complink.PNG);
-    background-size:cover;
-    background-position:center;
-    border-radius:10%;
-    width:150%;
-    height:20vh;
-}
-#portfolio{
-    background-image: url(portlink.PNG);
-    background-size:cover;
-    background-position:center;
-    border-radius:10%;
-    width:150%;
-    height:20vh;
-}
-#contact{
-    background-color:rgba(128, 128, 128, 0.37);
-    background-size:cover;
-    background-position:center;
-    border-radius:10%;
-    width:150%;
-    height:20vh;
-}
-
-.hobbies{
-    width:60%;
+    width: 100vw;
     height:50vh;
+    background-color:black;
+    background-image:url(top2.png);
+    background-size:cover;
+    background-position:bottom;
+    transition: all 5s ease-in-out;
     display:flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    text-align:center;
+    align-items: center;
+    z-index:10;
+    left:0;
+    
 }
-.hobbies div{
-    width:30%;height:30%;
-}
-.hobbies div img{
-    width:30%;height:30%;
-}
-/* page comp */
-.Langage{
-    width:60%;
-    height:50vh;
-    display:flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-}
-.Langage div{
+#topaccueil #Twynot{
+    position: absolute;
     width:100%;
-
+    font-size:7em;
+    font-family: 'Anton', sans-serif;
+    color:rgba(0, 0, 0, 0.678);
+    text-shadow:5px 5px 10px rgb(255, 255, 255);
+}
+#topaccueil #STwynot{
+    position:absolute;
+    top:25%;
+    width:100%;
+    font-size:4em;
+    font-family: 'Felipa', cursive;
+    color:rgba(0, 0, 0, 0.678);
+    text-shadow:5px 5px 10px rgb(255, 255, 255);
 }
 
-/* page portfo */
-
-#containtPort{
-    
-    width:50%;
-    height:75vh;
-    border-radius: 15%;
-    display:flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    margin-top:20vh;
-    margin-left:40%;
-}
-
-#Morpion,#Shifumi,#site3d,#parallax{
-    position:relative;
-    width:48%;
-    height:25vh;
-    background-color:rgb(134, 63, 63);
-    
-    transition:all 1s;
-}
-#Morpion:hover,#Shifumi:hover,#site3d:hover,#parallax:hover{
-    transform:scale(1.1);
-}
-#Morpion{
-    background-image: url(Capturemorpion.PNG);
+#bot{
+    position: absolute;
+    width: 100vw;
+    top:50vh;
+    height:50vh;
+    background-image:url(bot2.png);
     background-size:cover;
     background-position:top;
-    border-radius:10%;
-    
+    transition: all 5s ease-in-out;
+    background-color:black;
+    text-align:center;
+    z-index:10;
+    left:0;
 }
-#Shifumi{
-    background-image: url(Captureshifumi.PNG);
-    background-size:cover;
-    background-position:center;
-    border-radius:10%;
-    
+
+#bot #STcrea{
+    position: absolute;
+    width:100%;
+    top:75%;
+    font-size:1.5em;
+    font-family: 'Great Vibes', cursive;
+    color:rgba(0, 0, 0, 0.678);
+    text-shadow:5px 5px 10px rgb(255, 255, 255);
 }
-#site3d{
-    background-image: url(CaptureSitecv.PNG);
-    background-size:cover;
-    background-position:center;
-    border-radius:10%;
-    
+
+.containt{
+    width:50%;
+    height:50vh;
+    background-color:rgb(46, 43, 43);
+    box-shadow: 0px 0px 5px 5px white;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
-#parallax{
-    background-image: url(parallax\ link.PNG);
-    background-size:cover;
-    background-position:center;
-    border-radius:10%;
-    
+.Choice{
+    width:100%;
+    color:white;
+    font-family: 'Inconsolata', monospace;
+}
+.pc,.smartph{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width:48%;
+    height:40%;
+    background-color:white;
+    font-family: 'Libre Barcode 39 Text', cursive;
+    font-size:3em;
+}
+@media (max-width:700px){
+    #topaccueil #Twynot{
+        font-size:3em;
+    }
+    #topaccueil #STwynot{
+        font-size:1.5em;
+    }
+    .pc,.smartph{
+        width:100%;
+        font-size:1.5em;
+    }
 }

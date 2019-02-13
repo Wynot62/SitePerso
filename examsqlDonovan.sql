@@ -169,3 +169,8 @@ create table t1{
     --
 }
 create table t2 like t1;
+
+/* */
+
+create view list01 as (select nom,prenom,age,concat(note1,",",note2,",",note3)as NNN from notes 
+where sexe='M' order by age);

@@ -9,69 +9,7 @@ body{
     transform-style: preserve-3d;
 }
 
-/* accueil */
-#topaccueil{
-    position: absolute;
-    top:0;
-    width: 100vw;
-    height:50vh;
-    background-color:black;
-    background-image:url(top2.png);
-    background-size:cover;
-    background-position:bottom;
-    transition: all 5s ease-in-out;
-    display:flex;
-    flex-flow: row wrap;
-    text-align:center;
-    align-items: center;
-    z-index:10;
-    
-}
-#topaccueil #Twynot{
-    position: absolute;
-    width:100%;
-    font-size:7em;
-    font-family: 'Kaushan Script', cursive;
-    color:rgba(0, 0, 0, 0.678);
-    text-shadow:5px 5px 10px rgb(255, 255, 255);
-}
-#topaccueil #STwynot{
-    position:absolute;
-    top:25%;
-    width:100%;
-    font-size:4em;
-    font-family: 'Great Vibes', cursive;
-    color:rgba(0, 0, 0, 0.678);
-    text-shadow:5px 5px 10px rgb(255, 255, 255);
-}
 
-#bot{
-    position: absolute;
-    width: 100vw;
-    top:50vh;
-    height:50vh;
-    background-image:url(bot2.png);
-    background-size:cover;
-    background-position:top;
-    transition: all 5s ease-in-out;
-    background-color:black;
-    text-align:center;
-    z-index:10;
-}
-
-#bot #STcrea{
-    position: absolute;
-    width:100%;
-    top:75%;
-    font-size:1.5em;
-    font-family: 'Great Vibes', cursive;
-    color:rgba(0, 0, 0, 0.678);
-    text-shadow:5px 5px 10px rgb(255, 255, 255);
-}
-#container{
-    z-index:-3;
-    display:none;
-}
 /*pas principal*/
 .blue{
     background:-webkit-linear-gradient(#eee,rgb(72, 130, 148),rgb(13, 73, 112));
