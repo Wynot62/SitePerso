@@ -1,0 +1,41 @@
+#head{
+    z-index:2;
+    width:100%;
+    
+    background-color:rgba(68, 68, 68, 0.603);   
+    position:fixed;
+    color:white;
+}
+#nav{
+    z-index:3;
+    position:fixed;
+    color:white;
+    font-size:300%;
+    
+}
+#navopen{
+    display:none;
+    width:20vw;
+    height:100vh;
+    background-color:rgba(255, 255, 0, 0.473);
+}
+#bouttonnav{transition:0.5s all}
+#title-page{
+    text-align:center;
+    height:25vh;
+}
+#title-page h1{
+    font-size:5vw;
+    font-family: 'Oswald', sans-serif;
+}
+
+#first-list{
+    display:flex;
+    flex-flow: nowrap;
+    margin:0;
+    padding:0;
+    height:100%;
+    
+    overflow: hidden;
+    background-color:rgba(255, 255, 255, 0.527);
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!--Exemple 1 
+    
+    On a une div: dans cette div on a le code html suivant :
+vers une page <a href="#">contact</a> avec un formulaire pour laisser vos coordeonnées.
+-modifier par javascript le lien pour qu'il mène vers "/page/contact.html" -->
+    <div id="container">
+        Lien vers une page <a href="#">contact</a> avec une formulaire pour laisser vos coordonnées.
+    </div>
+    <script>
+    // première façon
+    var cont=document.getElementById("container");
+    
+    cont.getElementsByTagName("a")[0].href="contact.html";
+
+    //Deuxieme façon
+
+    document.querySelectorAll("a").href="contact.html";
+    // var madiv=document.getElementById('container');
+    // if(madiv){
+    //     var link=madiv.getElementByTagName('a')[0];
+    //     if (link){
+    //         link.href='/page/contact.html';
+    //     }
+    // }
+    </script>
+
+
+<div id="container2">
+    <p id="note">ceci est un paragraphe de test</p>
+</div>
+<script>
+
+var cont2=document.getElementById("container2");
+if(cont2){
+cont2.className="note-important";}
+
+
+</script>
+
+
+<div id="container3">ceci est un texte qui doit être en gras.</div>
+<script>
+var cont3=document.getElementById("container3");
+cont3.style="font-weight:bold";
+</script>
+
+<div id="container4"></div>
+<script>
+    var cont4=document.getElementById("container4");
+
+//création div id dwwm
+    var dwwm=document.createElement('div');
+    dwwm.id="dwwm";
+    document.getElementById("container4").appendChild(dwwm);
+//o n crée les noeuds textutels
+    var textNodes=[
+        document.createTextNode("L'hyper text Markup Language "),
+        document.createTextNode(",generalement abregé "),
+        document.createTextNode("html"),
+        document.createTextNode(", est le contenu balisable conçu pour representer les page web,"),
+        document.createTextNode("C'est une language permettant d'écrire de l'hypertext, d'ou son nom."),
+        document.createTextNode("Il est promu par le "),
+        document.createTextNode("World wide web"),
+        document.createTextNode(".")
+    ];
+// on crée les deux strong et les a
+    var strong1=document.createElement('strong');
+    var strong2=document.createElement('strong');
+    strong1.appendChild(textNodes[0]);
+    strong2.appendChild(textNodes[2]);
+
+    var lien1=document.createElement('a');
+    var lien2=document.createElement('a');
+
+    lien1.href='https://fr.wikipedia.org/wiki/Hypertext_markup_language';
+    lien1.appendChild(strong2);
+    lien2.href='https://fr.wikipedia.org/wiki/Hypertext_markup_language';
+    lien2.appendChild(textNodes[6]);
+    var br=document.createElement('br');
+
+    // on met tout dans la div
+dwwm.appendChild(strong1);
+dwwm.appendChild(textNodes[1]);
+dwwm.appendChild(lien1);
+dwwm.appendChild(textNodes[3]);
+dwwm.appendChild(br);
+dwwm.appendChild(textNodes[4]);
+dwwm.appendChild(textNodes[5]);
+dwwm.appendChild(lien2);
+dwwm.appendChild(textNodes[7]);
+  
+
+</script>
+
+
+<div id="container5"></div>
+
+<script>
+var cont5=document.getElementById("container5");
+var p=document.createElement('p');
+p.appendChild(document.createTextNode('Liste des grands joueurs'));
+
+var list=document.createElement('ul');
+
+var li_list=[
+document.createTextNode('Pele'),
+document.createTextNode('Maradona'),
+document.createTextNode('Platini'),
+document.createTextNode('Messi'),
+document.createTextNode('Ronaldo'),
+document.createTextNode('Cryuff')
+];
+ 
+for(i=0;i<li_list.length;i++){
+    li=document.createElement('li');
+    li.appendChild(li_list[i]);
+    list.appendChild(li);
+}
+
+var p2=document.createElement('p');
+
+var lien=document.createElement('a');
+
+
+lien.href="https://google.fr";
+lien.appendChild(document.createTextNode('ici'));
+
+
+p2.appendChild(document.createTextNode("voir"));
+p2.appendChild(lien);
+
+cont5.appendChild(p);
+cont5.appendChild(list);
+cont5.appendChild(p2);
+
+var ptest=document.createElement('p');
+ptest.appendChild(document.createTextNode("crufff2"));
+list.insertBefore(ptest,list.children[4]);
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+body{
+    width:100%;
+    height:200vh;
+    background-color:rgb(54,79,86);
+    padding:0;
+    margin:0;
+
+}
+#fond0{
+    width:100%;
+    height:100vh;
+    position:absolute;
+    z-index:10;
+    background-image:url(drakef0.png);
+    background-size:cover;
+    background-position:bottom;
+    
+}
+#fond1{
+   
+    width:100%;
+    height:100vh;
+    position:absolute;
+    z-index:6;
+    background-image:url(drakef1.png);
+    background-size:cover;
+    background-position:bottom;
+    transition:1s all ease-in-out;
+}
+#fond2{
+    
+    width:100%;
+    height:100vh;
+    position:absolute;
+    z-index:5;
+    background-image:url(drakef2.png);
+    background-size:cover;
+    background-position:bottom;
+    transition:1s all ease-in-out;
+}
+#fond3{
+    
+    width:100%;
+    height:100vh;
+    position:absolute;
+    z-index:4;
+    background-image:url(drakef3.png);
+    background-size:cover;
+    background-position:bottom;
+    transition:1s all ease-in-out;
+}
+#fond4{
+    
+    width:100%;
+    height:100vh;
+    position:absolute;
+    z-index:3;
+    background-image:url(drakef4.png);
+    background-size:cover;
+    background-position:bottom;
+    transition:1s all ease-in-out;
+}
+#fond5{
+    width:100%;
+    height:100vh;
+    position:absolute;
+    z-index:2;
+    background-image:url(backgrounddrake.png);
+    background-size:cover;
+    background-position:bottom;
+    transition:1s all ease-in-out;
+}
+.container{
+    position:relative;
+    z-index:10;
+    background-color:rgb(54,79,86);
+    width: 100%;
+    height: 100vh;
+    top: 100vh;
+}
+
+
+   

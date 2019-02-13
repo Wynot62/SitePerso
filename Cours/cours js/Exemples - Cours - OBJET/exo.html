@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function Annonce(marque, annee, prix) {
+            this.marq = marque;
+            this.annee = annee;
+            this.prix = prix;
+            this.phraselist = function () {
+                return "Une " + garage[i].marq + "datant de " + garage[i].annee + " au prix de " + garage[i].prix + "<br>"
+            }
+        }
+
+
+        var garage = []
+        garage[0] = new Annonce("Renault Mégane", 2004, "2500€");
+        garage[1] = new Annonce("bmw série 1", 2015, "10.000€");
+        garage[2] = new Annonce("mercedes", 2000, "3200€");
+        garage[3] = new Annonce("bentley", 2018, "40.000€");
+
+
+        function Listvoiture() {
+            document.write("<ul><strong>Liste de nos annonces :</strong>");
+            for (i = 0; i < garage.length; i++) {
+                document.write("<li>" + garage[i].phraselist() + "</li>");
+            }
+            document.write("</ul>");
+        }
+
+        Listvoiture();
+
+
+        function chien(nom, race, age) {
+            this.nom = nom;
+            this.race = race;
+            this.age = age;
+            this.tableau = function () {
+
+            }
+            this.setname = function (newname) {
+                this.nom = newname;
+            }
+        }
+
+        var chenil = [];
+        chenil[1] = new chien("Malamute", "Goliath", 2);
+        chenil[2] = new chien("Malamute", "Goliath", 2);
+        chenil[3] = new chien("Malamute", "Goliath", 2);
+        chenil[4] = new chien("MalamuteXXXX", "GoliathXXXX", 2);
+        chenil[5] = new chien("Malamute", "Goliath", 2);
+        chenil[6] = new chien("Malamute", "Goliath", 2);
+        chenil[7] = new chien("Malamute", "Goliath", 2);
+        chenil[8] = new chien("Malamute", "Goliath", 2);
+        chenil[9] = new chien("Malamute", "Goliath", 2);
+        chenil[10] = new chien("Malamute", "Goliath", 2);
+
+        function tableaulist() {
+            document.write("=======Liste de nos 10 pensionnaires:=========<br>");
+            document.write("<table>");
+            document.write("<tr><td>RACE</td><td>NOM</td><td>AGE</td></tr>");
+            for (i = 1; i < chenil.length; i++) {
+
+                document.write("<tr><td>" + chenil[i].race + "</td><td>" + chenil[i].nom + "</td><td>" + chenil[i].age + "</td></tr>");
+            }
+            document.write("</table>");
+        }
+        
+        
+        tableaulist();
+        chenil[3].setname("quentin");
+        tableaulist();
+    </script>
+</body>
+
+</html>

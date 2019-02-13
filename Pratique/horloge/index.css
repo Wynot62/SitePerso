@@ -1,0 +1,17 @@
+#heure{
+    position:absolute;
+    width:4%;
+    left:15%;
+    top:12vh;
+    transition:all 1s;
+    transform-origin: bottom center;
+}
+#minute{
+    position:absolute;
+    width:6%;
+    left:14.5%;
+    top:7.3vh;
+    transition:all 0.5s;
+    transform-origin: bottom center;
+    
+}

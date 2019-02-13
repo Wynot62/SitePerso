@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>object 4 avec methode</title>
+</head>
+
+<body>
+    <h2>Methode 4</h2>
+    <script>
+        function Stagiaire(param1, param2, param3) {
+            this.nom = param1;
+            this.age = param2;
+            this.email = param3;
+            this.presentemoi = function () {
+                document.write("Je suis " + this.nom + " et j'ai " + this.age + ". Mon email est : " + this.email + "<br>");
+            }
+        }
+        var personne = new Stagiaire("pierre", 30, "pierre@gmail.fr");
+        personne.presentemoi();
+        personne.age = "32";
+        personne.presentemoi();
+        var personne2 = new Stagiaire("Alex", 25, "alex@free.co.uk");
+        personne2.presentemoi();
+        var personne3 = new Stagiaire("martine", 51, "martine@free.co.uk");
+        personne3.presentemoi();
+
+    </script>
+</body>
+
+</html>

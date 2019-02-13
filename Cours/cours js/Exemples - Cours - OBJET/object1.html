@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>object 1</title>
+
+</head>
+
+<body>
+    <h2>Methode 1</h2>
+    <script>
+        var personne = new Object();
+
+        personne.nom = "pierre";
+        personne.age = "30";
+        personne.email = "pierre@gmail.fr";
+
+        document.write("nom : " + personne.nom + "<br>");
+        document.write("age : " + personne.age + "<br>");
+        document.write("email : " + personne.email + "<br>");
+
+        personne.age = "32";
+        document.write("Nouvelle valeur : age : " + personne.age + "<br>");
+    </script>
+</body>
+
+</html>

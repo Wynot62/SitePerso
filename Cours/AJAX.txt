@@ -1,0 +1,23 @@
+A:Asynchronus
+J:JavaScript
+A:and
+X:XML
+
+1/Création d'un objet : var xmr=XMLHTTPRequest();
+
+2/function callback
+
+3/open(---) canal --> server
+
+4/Send
+
+Domaine et sous dommaine (http/https) doivent être identiques		2XX Tout se passe bien
+									3XX Tout se passe bien mais modif de fichiers (rare)
+ready state:								4XX plus courrament 404 Fichier non trouvé
+0: creation								5XX erreur serv
+1: Début traitement
+2: Bien recu
+3: Prêt Envoyé
+4: Réponse arrivée.
+
+xhr.onreadystatechamps=fonction callback

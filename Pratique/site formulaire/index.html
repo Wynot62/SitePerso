@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+        <fieldset>
+            <legend>Information personnelles:</legend>
+    <label name="toto">Nom* :</label><input type="text" required autofocus><br>
+    Prenom* :<input type="text" required><br>
+    Sexe* : <br>
+    Homme<input type="radio" name="genre" value="homme">
+    Femme<input type="radio" name="genre" required value="femme"><br>
+    Mail* :<input type="email" required name="email" placeholder="someone@example.com"><span class="validity"></span><br><br>
+    Tel :<input type="tel" name="phone" pattern="[0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2} [0-9]{2}" placeholder="01 23 45 67 89"><span class="validity"></span><br><br>
+    Utilisateur* : <input type="text" required name="user"><span class="validity"></span><br>
+    Mot de passe* : <input type="password" required name="password" minlength="8"><span class="validity"></span><br>
+    <input type="submit">&nbsp;&nbsp;
+    <input type="reset">
+    <div id="label">* = Informations obligatoires</div>
+    <span class="validity"></span>
+    </fieldset>
+</form>
+</body>
+</html>

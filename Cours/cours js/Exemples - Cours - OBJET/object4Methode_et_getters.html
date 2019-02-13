@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>object 4 methodes getters and setters</title>
+</head>
+
+<body>
+    <h2>Methode 4 bis</h2>
+    <script>
+        function Stagiaire(param1, param2, param3) {
+            this.nom = param1;
+            this.age = param2;
+            this.email = param3;
+            this.presentemoi = function () {
+                document.write("Je suis " + this.nom + " et j'ai " + this.age + ". Mon email est : " + this.email + "<br>");
+            }
+            this.setAge = function (param1) {
+                this.age = param1;
+            }
+            this.getAge = function () {
+                return (this.age);
+            }
+        }
+        var personne = new Stagiaire("pierre", 30, "pierre@gmail.fr");
+        personne.presentemoi();
+        personne.setAge(32);
+        personne.presentemoi();
+        document.write("age = " + personne.getAge());
+    </script>
+</body>
+
+</html>
