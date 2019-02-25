@@ -230,17 +230,17 @@ section{
     height:5vh;
 }
 #Shifumi{
-    background-image:url(Captureshifumi.PNG);
+    background-image:url(../SitePC/Captureshifumi.PNG);
     background-size:cover;
     background-position:top;
 }
 #Morpion{
-    background-image:url(Capturemorpion.PNG);
+    background-image:url(../SitePC/Capturemorpion.PNG);
     background-size:cover;
     background-position:top;
 }
-#Sitecv{
-    background-image:url(CaptureSitecv.PNG);
+#Parallax{
+    background-image:url(../SitePC/parallax\ link.PNG);
     background-size:cover;
     background-position:top;
 }

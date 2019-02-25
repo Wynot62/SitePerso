@@ -174,3 +174,14 @@ create table t2 like t1;
 
 create view list01 as (select nom,prenom,age,concat(note1,",",note2,",",note3)as NNN from notes 
 where sexe='M' order by age);
+
+/* ici nous avons deux table relié par une clé étrangère personnes et services :: 
+cette commande permet de fusionner les deux tables en remplacant le contenu de la colonne numservice
+ par la colonne idservices qui contient donc les id qui sont utilisé dans la colonne numservice à la base */
+
+select nom,prenom,nom_service
+from personnes left join services
+on numservice = idservice;
+
+/* le left permet d'avoir aussi ceux de la table personnes qui n'ont aucune donnée dans la colonne de la table services l'autre table */
+/* le right est l'inversement */ 

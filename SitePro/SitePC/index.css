@@ -89,7 +89,7 @@ body{
     
 }
 #lien4{
-    background-color:rgba(128, 128, 128, 0.295);
+    background-image: url(contactlink.PNG);
     background-size:cover;
     background-position:center;
     border-radius:10%;
@@ -150,7 +150,7 @@ body{
     height:20vh;
 }
 #contact{
-    background-color:rgba(128, 128, 128, 0.37);
+    background-image: url(contactlink.PNG);
     background-size:cover;
     background-position:center;
     border-radius:10%;
@@ -236,4 +236,26 @@ body{
     background-position:center;
     border-radius:10%;
     
+}
+
+/* contact */ 
+
+#map{
+    width:50%;
+    height:25vh;
+    background-color:gray;
+    margin-top:15vh;
+    margin-left:30%;
+}
+#map iframe{
+    width:100%;
+    height:100%;
+}
+form{
+    display:flex;
+    flex-direction: column;
+    width:25%;
+    height:50vh;
+    margin-left:50%;
+    margin-top:5vh;
 }
