@@ -5,33 +5,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Anton|Felipa|Inconsolata|Libre+Barcode+39+Text" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bangers|Megrim|Amatic+SC" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
-    <title>Choix</title>
+    <title>Accueil/SiteCV</title>
 </head>
 
 <body>
-    <div id="accueil" onclick=ouverture()>
-        <div id="topaccueil">
-            <p id="Twynot">Whynot</p>
-            <p id="STwynot">Il faut devenir ce que l'on est..</p>
 
+    <div id="nav">
+        <div id="Name">
+            <h1><span class="orange">V</span>ales Donovan</h1>
+            <h2><span class="orange">D</span>éveloppeur <span class="orange">W</span>eb</h2>
         </div>
-
-        <div id="bot">
-
-            <p id="STcrea">VALES Donovan</p>
-        </div>
-
     </div>
-    <div class="containt">
-        <div class="Choice">Quel site voulez-vous voir ??</div>
+    <div id="scroll"><img id ="arrow" src="arrow-down-b.png"></div>
+    <div id="Prescontaint">
+        <h1>Présentation</h1>
+        <div id="parag">
+            <img src="avatar.png">
+            <p id="TextPres">Donovan VALES, 23 ans.<br><br> Je suis depuis
+                toujours passionné par l’outil
+                informatique,
+                souvent en recherche sur mon ordinateur, j'ai découvert le code qu'il est une chose passionnante.
+                Actuellement en formation de développement web et web mobile, je suis actuellement à la
+                recherche d'un
+                stage pour une durée de 3 mois 01/04/19 au 28/06/19 qui précedera l'examen de la formation qui
+                me
+                permettra d'avoir un titre professionnel de niveau III (équivalence BAC +2)</p>
+        </div>
+    </div>
 
-        <a href="SitePC/index.html" class="pc">Site n°1(en cours d'adaptation mobile)</a>
-        
-        <a href="SiteMobile/index.html" class="smartph">Site n°2</a>
-    </div> 
-        
+    <div id="Compcontaint">
+        <h1>Compétences</h1>
+        <div class="Langage">
+            <div class="row">
+                <div class="offset-1 col-10">
+                    <p class="langagename">HTML</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%">90%
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-1 col-10">
+                    <p class="langagename">CSS3</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%">90%
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-1 col-10">
+                    <p class="langagename">Javascript</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 75%">75%
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-1 col-10">
+                    <p class="langagename">MySQL</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 50%">en cours
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="offset-1 col-10">
+                    <p class="langagename">PHP</p>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 50%">en cours
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="Portcontaint">
+        <h1>Portfolio</h1>
+        <div id="bibli">
+            <a id="site1" href="Morpion/index.html"></a>
+            <a id="site2" href="PFC/index.html"></a>
+            <a id="site3" href="skyripa/index.html"></a>
+
+        </div>
+    </div>
+    <div id="Contcontaint">
+        <h1>Contact</h1>
+        <div id="mapform">
+            <div id="localisation"><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28765.500412858448!2d2.8138546113010925!3d50.41250210056205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dd30d804fba65f%3A0x8bc220fcc25f531b!2sAvion!5e0!3m2!1sfr!2sfr!4v1551773900797"
+                    width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+            <div id="form">
+                <form action="/action_page.php">
+                    <div class="form-group">
+                      <label for="email">Email:</label>
+                      <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                      <label for="nom">Nom:</label>
+                      <input type="nom" class="form-control" id="nom">
+                    </div>
+                    <div class="form-group">
+                        <label for="prenom">Prénom:</label>
+                        <input type="prenom" class="form-control" id="prenom">
+                      </div>
+                      <div class="form-group">
+                        <label for="comment">Une information particulière ?</label>
+                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                      </div>
+                    
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                  </form>
+            </div>
+        </div>
+    </div>
+
+
+
     <script src="index.js"></script>
 </body>
 
